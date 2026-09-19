@@ -1,0 +1,76 @@
+* {margin-left: 10px; margin-right: 10px;}
+body {background-color: rgb(148, 160, 114);}
+h1 {color: blue; text-align: center;}
+p {font-family: Helvetica, sans-serif; color: green;}
+/* quelques éléments de base  */
+#elem {border: solid 3px; border-radius: 8px; border-color: red; background-color: bisque; padding: 8px; color: red; font-weight: bold; font-size: medium; opacity: 0.4; width: 60%; margin: auto; line-height: 0.8; letter-spacing: 4px;}
+div#ptitre {position: relative; left: 590px; top: -80px; }
+img#imgtitr {border: 2px rgb(2, 116, 78) solid; box-shadow: 8px 6px 10px rgb(58, 105, 74);}   /* IMAGE AVEC BORDURE ET OMBRE  */
+p#abp {color: rgb(11, 124, 158);}
+/* PROPRIETES LIENS */
+a:link {color: rgb(3, 79, 165);}
+a:hover {background-color: red; }
+
+/* TABLEAU MENU n°1---- bordure de 60 en horizontal et 10 en vertical*/
+table#menu {width:60%; border-spacing: 60px 10px; font-size: 30px; }
+td.cel {text-align: center; padding: 10px; border: solid 2px green; border-radius: 20px; background-color: darkseagreen; width: 130px;}
+
+/* TABLEAU MENU n°2 à partir de liste */
+.nav {background-color: rgb(224, 224, 141); text-align: center; margin: 0; padding: 0; border: solid 2px orange; }
+.nav li {display: inline-block; font-size: 28px; padding: 20px;}
+
+/* TABLEAU MENU n°3 à partir de boutons */
+input.bmenu {width: 200px; height: 50px; font-size: 22px; font-weight: bold; color: antiquewhite; background-color: blueviolet; border-radius: 15px; margin: 10px 50px;}
+button.bmenu {width: 200px; height: 50px; font-size: 22px; color: antiquewhite; background-color: blueviolet; border-radius: 15px; margin: 10px 50px;}
+
+/* identifiant class de centrage des éléments avec cette class  */
+.centrer {margin-left: auto; margin-right: auto; }
+/* formate div avec bordure, largeur 80%, fond, texte majuscule, padding de 5 en haut/bas et 30 en gauche/droite */
+div#divbor {border: 2px solid greenyellow; position: relative; left: 250px ; width: 80%; background-color: chocolate; font-size: 30px; text-transform: uppercase; padding: 5px 30px;}
+
+p.enligne {display: inline;}
+/* TABLEAU tab1 */
+table.tab1 {border: 2px solid; }
+td.tab1 {border: 1px solid orangered; width: 90px; text-align: center; }
+/* Images en ligne */
+img.imglg {width: 9%; padding: 10px;}
+/* effet mose hover */
+.mhover:hover {color: red; font-weight: bold;}
+p#mhov2:hover {background-color: rgb(209, 151, 76); border: solid 2px yellow; color: blue;}
+/*     div:hover {background-color: blue; border: solid red 2px;}       */
+#dhov {background-color: rgb(216, 161, 12); color: white; padding: 25px; text-align: center; width: 500px; margin: auto; font-size: 20px; }
+#dhov:hover { background-color: rgb(99, 173, 223); color: brown;}
+/* effets dropdown n°1 - affichage texte*/
+.divdrop {position: relative; display: inline-block;}           /* il s'agit de la div qui contient l'ensemble de génération du dropdown 1*/
+.divdropb {position: relative; display: inline-block; height: 40px; width: 120px; border: 2px solid;}
+
+.contentdrop { display: none; position: absolute; top: 30px; left: 25px; background-color: #c2ec2a; padding: 0px 16px; z-index: 1;}       /* il s'agit de la div du dropdown 1*/
+.divdrop:hover .contentdrop {display: block;}                    /* on applique l'effet mouse hover au descendant contentdrop de divdrop*/
+.divdropb:hover .contentdrop {display: block;} 
+/* effets dropdown n°2* - affichage menu */
+.divdrop2 {position: relative; display: inline-block; position: relative; left: 620px; top: -60px;}           /* il s'agit de la div qui contient l'ensemble de génération du dropdown 2*/
+.contentdrop2 { display: none; position: absolute; top: 5px; left: 490px; width: 70px; height: 80px; background-color: #84f06f; padding: 0px 10px; z-index: 1;}       /* il s'agit de la div du contenu du dropdown 2*/
+.divdrop2:hover .contentdrop2 {display: block;}                  /* on applique l'effet mouse hover au descendant contentdrop2 de divdrop2*/
+/* triplet de dropdown */
+#drop1 {position: relative; left: 50px; top: -20px; display: inline-block; height: 40px; width: 80px; border: 1px solid; background-color: aquamarine;}    /* génération de div n°1 */
+#drop2 {position: relative; left: 50px; top: -20px; display: inline-block; height: 40px; width: 80px; border: 1px solid; background-color: aquamarine;}    /* génération de div n°2 */
+#drop3 {position: relative; left: 50px; top: -20px; display: inline-block; height: 40px; width: 80px; border: 1px solid; background-color: aquamarine;}    /* génération de div n°2 */
+.contenudrp { display: none; width: 110px; height: 80px; position: relative; background-color: #84f06f; z-index: 1;}
+#drop1:hover .contenudrp {display: block;}
+#drop2:hover .contenudrp {display: block;}
+#drop3:hover .contenudrp {display: block;}
+
+
+.atdp {position: relative; display: inline-block; width: 300px; height: 50px; border: 2px solid; background-color: rgb(250, 146, 215);margin: 20px;}
+.atdrop {display: none; position: relative; top: -10px; left: 125px; width: 100px; height: 60px; background-color: #c2ec2a; z-index: 1;}
+.atdp:hover .atdrop {display: block;}
+
+/* boutons bas et haut de page  */
+#bbhp {width: 270px; height: 60px; border: 2px solid orange; display: flex; padding: 8px;}
+#flecheb {width: 30px; height: 50px; margin-left: 50px;}
+#flecheh {width: 30px; height: 50px; transform: rotate(180deg); margin-left: 30px;}
+
+#idscroll {width: 400px; height: 90px; border: 1px solid; overflow: auto; padding: 5px; }
+
+/* suppression des accents   */
+.rouge {color: red; font-size: 22px;}
