@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site modèle AT</title>
+    <link rel="stylesheet" href="./Modèle1 style.css">
+</head>
+<body>
+    <header>
+        <img src="./Images/Fiche QR code site LPE.jpg" alt="" id="imgtitr" width="30%" height="30%">
+        <div id="ptitre">
+            <p>L'image est redimensionnée en HTML en % de la largeur de l'écran (ici 30%) ; la bordure est ajoutée en CSS ainsi que l'ombre.</p>
+            <p>(Ce texte devrait se trouver selon le flow, en dessous de l'image. Il a été déplacé par position relative.)</p>
+        </div>
+        <h1 style="position: relative; top: -55px; margin-top: 0; margin-bottom: 0;">Site Modèle HTML CSS</h1>
+
+        <h2 style="margin-top: -20px;">1- Quelques notions de base</h2> 
+        <!-- Présentation de quelques éléments de base ; ex. div avec bordure, texte préformaté  -->
+        <div id="elem">Ceci est une div centrée de largeur 60% et avec une bordure et de la transparence. <br>Les caractères sont espacés et les lignes rapprochées </div>
+        <pre style="font-size: 16px;">
+            Ceci est une texte préformaté. Multi     espaces
+            Premier passage à la ligne. Un texte préformaté est en mode bloc = pas de retour à la ligne auto.
+                tabulation
+                    double tabulation.
+            La police sera à chasse fixe et les signes + grand que, + petit, guillemets hauts, et commercial doivent être remplacés par le code d'échapement.
+        </pre>
+        <h2 style="margin-top: -20px;">2- Ce site utilise une marge de 10px à gauche et à droite</h2>
+        <!-- MENU 1 - Menu créé sous forme de tableau ; tableau mid en forme par CSS : centré, espacement colonnes -->
+         <p> Réalisation du menu 1 ci-dessous sous forme de tableau formaté en CSS. Ce menu est actif, il renvoit vers les pages 1 et 2.</p>
+        <table id="menu" class="centrer">
+            <tr>
+                <td class="cel"><a href="./Mod1-Accueil.html">Accueil</a></td>
+                <td class="cel"><a href="./Mod1-page1.html">Page 1</a></td>
+                <td class="cel"><a href="./Mod1-page2.html" target="_blank">Page 2</a></td>
+            </tr>
+        </table>
+        <br>
+        <!-- MENU 2 - Autre génération de menu à partir de liste -->
+        <p> Réalisation du menu 2 ci-dessous sous forme de liste (menu version 2)</p>
+        <ul class="nav">
+            <li><a href="./Mod1-Accueil.html">Accueil</a></li>
+            <li><a href="./Mod1-page1.html">Notre Page 1</a></li>
+            <li><a href="./Mod1-page2.html">Notre Page 2</a></li>  
+            <li><a href="./Mod1-page1.html">Notre Page 1</a></li>
+        </ul>           <!-- on a utilisé des li avec style  display: inline-block  on aurait pu aussi float-left -->
+        <br>
+        <!-- MENU 3 - Menu généré à partir de boutons  input -->
+         <p style="margin-bottom: 0%;"> Réalisation du menu 3 ci-dessous à partir de balises input ; le lien vers la cible passe par une commande JS</p>
+         <div style="width: 50%; border: solid 0px; margin-left: auto; margin-right: auto;">
+            <input type="button" class="bmenu" value="Entrée W3schools" onclick="window.location.href ='https:&#47&#47www.w3schools.com/';" >    <!-- slash non accepté ; est remplacé par &#47 -->
+            <input type="button" class="bmenu" value="Entrée 2">
+            <input type="button" class="bmenu" value="Entrée 3">
+         </div>
+        <p style="margin-bottom: 0%;">Bouton Page1 créé avec balise button ; lien vers page1 généré par onClick JS ; ce bouton pourrait servir dans le menu prédédent en replacement des input ; il intègre la pseudo-classe :hover pour changer la couleur du texte en cas de survol</p>
+         <button class="bmenu mhover" style="margin-bottom: 25px;" onclick="window.location.href = 'Mod1page1.html' ; " >Page 1</button> <!-- ce bouton envoie sur la page 1 dans la même fenênètre ; il appartient à 2 class -->
+        <br>
+    </header>
+
+    <h2 style="margin-top: 0;">3- Nouveau titre h2</h2> 
+    <p>Liste de sites Internet</p>
+    <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3schools</a>  <p class="enligne">  site de référence HTML CSS JS  **** ce paragraphe est mis en inline pour rester sur la même ligne que le lien</p></li>
+        <li><a href="https://htmlcheatsheet.com/"  target="_blank">HTMLcheatsheet</a>   <p class="enligne">  site de ressources HTML CSS  </p></li>
+    </ul>
+    
+    <p>Insertion d'une ligne horizontale par hr</p>
+    <hr>    <!-- ligne horizontale -->
+    <br>
+    <div id="divbor">div avec bordure, décalage gauche et réduction de largeur</div>
+       
+    <h2>4- Titre h2 avec icônes &#128176; &#128512; &#9924; et FLOAT</h2>
+    <p id="abp">TEXTE LONG **** Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium temporibus voluptates aperiam nostrum assumenda recusandae, quo aliquid! Ex veniam delectus tempore impedit cupiditate minus perferendis et deleniti, neque rem in deserunt doloremque. Quo, commodi. dolor sit amet consectetur adipisicing elit. Reprehenderit possimus beatae commodi odit voluptas adipisci explicabo consectetur distinctio pariatur voluptatibus maxime, illum mollitia! Officiis, rerum quae sint nemo aut saepe.</p>
+
+    <p>Insertion d'un tableau avec bordures, cellules à largeur fixée </p>
+    <table class="tab1">
+        <tr>
+          <td class="tab1">cell1_1</td>
+          <td class="tab1">cell2_1</td>
+          <td class="tab1">cell3_1</td>
+        </tr>
+        <tr>
+          <td class="tab1">cell1_2</td>
+          <td class="tab1">cell2_2</td>
+          <td class="tab1">cell3_2</td>
+        </tr>
+    </table>
+    <h3 style="margin-bottom: 0;">FLOAT</h3>
+    <p><img src="./Images/pineapple.jpg" alt="Pineapple" style="float:left; width:100px;height:100px;">
+        Image avec float left incluse dans un paragraphe <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+     <!-- Mélange texte et image en ligne -->
+    <p style="float: left;">Paragraphe (avec icône) défini en float left ; &#128522; il libère l'espace à droite pour la suite, ici, une image en float left</p>
+    <img src="./Images/Image 100px.jpg" style="float: left; width: 50px; height: 50px;">
+    <p><br> &#128107; L'image en float left permet la suite avec ce paragraphe débutant avec une icône</p>
+    <!-- 7 images en ligne dans 1 boîte -->
+    <div>
+        <p style="margin-top: 40px; margin-bottom: 5px;">Affichage d'images en ligne ; il n'a pas été nécessaire de passer par la proprité float</p>
+        <img class="imglg" src="./Images/fleur 1.Jpg">
+        <img class="imglg" src="./Images/fleur 1.Jpg">
+        <img class="imglg" src="./Images/fleur 1.Jpg">
+        <img class="imglg" src="./Images/fleur 1.Jpg">
+        <img class="imglg" src="./Images/fleur 1.Jpg">
+        <img class="imglg" src="./Images/fleur 1.Jpg">
+        <img class="imglg" src="./Images/fleur 1.Jpg">
+    </div>
+    <h2>5- Quelques exemples de mouse hover</h2>
+    <!-- Ici on teste l'application de :hover à des éléments HTML -->
+    <p class="mhover" style="font-size: 18px;">Mon texte mouse hover. ATTENTION, avec la pseudo-classe :hover, on ne peut pas modifier une propriété définie directement par style dans la balise HTML</p>
+    <p id="mhov2" style="padding: 10px 20px 10px 20px; margin-right: 1400px; ">Dans ce 2ème texte mouse hover on ajoute une bordure, une couleur bgd, et modif couleur texte</p>
+    <div id="dhov" style="position: relative; top: -50px; padding: 20px; text-align: center; display: inline; margin-left: 600px;"> Mouse hover sur une div - la div est décalée pour être à la même hauteur que le paragraphe</div>
+    
+    <!-- Quelques exemples de dropdown -->
+    <h3 style="margin-top: 0;">Exemples de dropdown</h3>
+    <p>Le passage de la souris sur les éléments indiqués génère le déroulement d'un contenu</p>     <!--  voir aussi CSS Tooltip  -->
+
+    <div class="divdrop">           <!-- Dropdown 1a - c'est la div qui génère le dropdown -->
+        <span style="font-size: 22px; color: brown;">Dropdown 1 - Passer la souris pour voir le texte</span>
+        <div class="contentdrop">   <!-- c'est la div du contenu déroulant -->
+             <p>Bonjour j'apparais et je disparais</p>
+        </div>
+    </div>
+
+    <div class="divdropb">           <!-- Dropdown 1b - c'est la div de l'ensemble du dropdown ; elle contient son propre contenu + le contenu dropdown-->
+      dropdown 1b
+      <div class="contentdrop">   <!-- c'est la div du contenu déroulant -->
+           <p>Bonjour AT</p>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="divdrop2">           <!-- Dropdown 2 - c'est la div de l'ensemble du dropdown -->
+        <button style="font-size: 22px; color: brown;">Dropdown 2 - Passer la souris pour voir un menu</button>
+        <div class="contentdrop2">   <!-- c'est la div du contenu déroulant -->
+             <ul style="list-style-type: none; position: relative; left:-60px; top:-10px;">        <!-- suppression des puces -->
+                <li>Menu&nbsp1</li>
+                <li>Menu&nbsp2</li>
+                <li>Menu&nbsp3</li>
+             </ul>
+        </div>
+    </div>
+    <br>
+  <!-- génération d'une suite de dropdown ; ex. 2 div qui génèrent des dropdown de mêmes caractéristiques-->
+    <div id="drop1">triplet AAAAAA        <!-- bouton A de génération d'un dropdown -->
+      <div class="contenudrp">   <!-- c'est la div du contenu déroulant -->
+        <p>Bonjour AT</p>
+      </div>
+    </div>
+    <div id="drop2">triplet BBBBBB        <!-- bouton B de génération d'un dropdown -->
+      <div class="contenudrp">   <!-- c'est la div du contenu déroulant -->
+        <p>Bonjour KW</p>
+      </div>
+    </div>
+    <div id="drop3">triplet CCCCCC        <!-- bouton C de génération d'un dropdown -->
+      <div class="contenudrp">   <!-- c'est la div du contenu déroulant -->
+        <p>Bonjour BP</p>
+      </div>
+    </div>
+  <!-- Utilisation Javascript  -->
+    <p id="par1">u</p>    <!-- ce paragraphe est modifié en js (voir en bas script 1)   -->
+
+    <!-- bouton d'affichage d'un panneau    voir script 2 ci-desous-->
+	  <button style="width: 140px; height: 40px; background-color: red; font-weight: bold; float: left;" onclick="clic()"> Cliquez ici</button>
+    <p style="display: inline;">et j'affiche un panneau</p>
+    <div id="pann1" style="height: 60px; width: 200px; background-color: yellow;">Panneau on/off</div>
+
+    <!--   boutons bas de page et haut de page   voir script 3 ci-dessous-->
+    <div id="bbhp">
+      Aller en Bas et Haut de page
+      <img src="./Images/flèche.png" id="flecheb" onclick="hbpage(0)">
+      <img src="./Images/flèche.png" id="flecheh" onclick="hbpage(1)">
+   </div>
+   <br>
+  <!-- Scroll bar dans une div -->
+    <div id="idscroll">
+      Utilisation du style overflow: auto <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque facere impedit officiis culpa omnis pariatur repellat dicta perferendis officia? Quo earum assumenda reprehenderit consequuntur eum ex corporis ea placeat dolore architecto? Praesentium veritatis iure quos velit doloremque numquam sed quis dicta laboriosam accusantium! Ea pariatur ipsam, assumenda voluptatem rem reprehenderit nostrum exercitationem aut accusantium placeat repellat est blanditiis eaque ipsum aliquam inventore? Pariatur a consequatur, ea, nihil cumque architecto alias quo nostrum quibusdam soluta magnam aliquam temporibus aut dolores quod?
+    </div>
+    <br>
+    <h2 style="border-bottom: 0px;">6- Fonction de suppression des accents</h2>
+    <span class="rouge"> &nbsp &nbsp Texte avec accents : </span>
+    <span id="acc_av" class="rouge">é è à ù ê ë î ï ô ç ç</span>
+    <span class="rouge"> &nbsp &nbsp &nbsp &nbsp Texte sans accent ni cédille : </span>
+    <span id="acc_ap" class="rouge"></span>
+
+    <!-- Liens internes - liens entre pages -->
+    <h2>6- Boutons et liens</h2>
+    <button onClick= "window.open('./Mod1-page1.html')" style="background-color: darkseagreen;">Ouvre 1 page dans un nouvel onglet</button>
+    <span>     utilisation de window.open (ou open) ; on peut ouvrir dans une nouvelle fenêtre ou dans un nouvel onglet</span>
+    <!-- de façon plus générale, on ouvre avec window.open dans une nouvelle fenêtre sauf si aucun nom n'est indiqué (on ouvre alors un nouvel onglet); on peut donner des paramètres pour la nouvelle fenêtre
+      window.open("http://votre_url","nom_de_la_fenetre","menubar=no, status=no, width=100px"); -->
+    <br> <br>
+    <button onClick= "location.href = './Mod1-page1.html'"  style="background-color: rgb(146, 214, 226);">Ouvre 1 page dans l'onglet actif</button>
+    <span>    dans notre exemple, la page ouverte comporte un bouton pour revenir à la page appelante (idem au retour arrière du navigateur) </span>
+
+    
+  </body>
+
+  <script src="./Modèle1 JS.js">    </script> 
+
+ </html>
